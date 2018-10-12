@@ -61,3 +61,16 @@ var TitleCaseOver;
 STUDLYCAPVAR = 10;
 PRoperCAmelCAse = "A String";
 tITLEcASEoVER = 9000;
+var a = 3;
+var b = 17;
+var c = 12;
+
+// Only modify code below this line
+
+a += 12;
+b += 9;
+c += 7;
+
+var myStr = "I am a \"double quoted\" string inside \"double quotes\"."; // Change this line
+
+var myStr="FirstLine\n\t\\SecondLine\nThirdLine"; // Change this line
