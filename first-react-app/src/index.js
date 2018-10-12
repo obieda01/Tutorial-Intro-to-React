@@ -74,3 +74,42 @@ c += 7;
 var myStr = "I am a \"double quoted\" string inside \"double quotes\"."; // Change this line
 
 var myStr="FirstLine\n\t\\SecondLine\nThirdLine"; // Change this line
+// Example
+var ourStr = "I come first. " + "I come second.";
+
+// Only change code below this line
+
+var myStr = "This is the start. " + "This is the end.";
+// Example
+var ourName = "freeCodeCamp";
+var ourStr = "Hello, our name is " + ourName + ", how are you?";
+
+// Only change code below this line
+var myName ="Ahmad Ob";
+var myStr = "My name is " +myName+ " and I am well!";
+// Example
+var anAdjective = "awesome!";
+var ourStr = "freeCodeCamp is ";
+ourStr += anAdjective;
+
+// Only change code below this line
+
+var someAdjective="passion";
+var myStr = "Learning to code is "
+myStr+= someAdjective;
+// Setup
+var myStr = "Jello World";
+
+// Only change code below this line
+
+myStr = "Hello World"; // Fix Me
+
+// Example
+var firstName = "Ada";
+var secondLetterOfFirstName = firstName[1];
+
+// Setup
+var lastName = "Lovelace";
+
+// Only change code below this line.
+var thirdLetterOfLastName = lastName[2];
