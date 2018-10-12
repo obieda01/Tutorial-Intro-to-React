@@ -113,3 +113,81 @@ var lastName = "Lovelace";
 
 // Only change code below this line.
 var thirdLetterOfLastName = lastName[2];
+// Example
+var firstName = "Ada";
+var lastLetterOfFirstName = firstName[firstName.length - 1];
+
+// Setup
+var lastName = "Lovelace";
+
+// Only change code below this line.
+var lastLetterOfLastName = lastName[lastName.length-1];
+
+function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {
+    // Your code below this line
+    var result = myAdjective +" " +myNoun+" " +myVerb+" " +myAdverb;
+  
+    // Your code above this line
+    return result;
+  }
+  
+  // Change the words here to test your function
+  wordBlanks("dog", "big", "ran", "quickly");
+
+  // Example
+var ourArray = ["John", 23];
+
+// Only change code below this line.
+var myArray = ["hello",22];
+
+// Example
+var ourArray = [["the universe", 42], ["everything", 101010]];
+
+// Only change code below this line.
+var myArray = [["hello",33],[33,33]];
+// Example
+var ourArray = [50,60,70];
+var ourData = ourArray[0]; // equals 50
+
+// Setup
+var myArray = [50,60,70];
+
+// Only change code below this line.
+var myData = myArray[0];
+// Setup
+var myArray = [[1,2,3], [4,5,6], [7,8,9], [[10,11,12], 13, 14]];
+
+// Only change code below this line.
+var myData = myArray[2][1];
+// Example
+var ourArray = ["Stimpson", "J", "cat"];
+ourArray.push(["happy", "joy"]); 
+// ourArray now equals ["Stimpson", "J", "cat", ["happy", "joy"]]
+
+// Setup
+var myArray = [["John", 23], ["cat", 2]];
+
+// Only change code below this line.
+
+myArray.push(["dog",3]);
+// Example
+var ourArray = [1,2,3];
+var removedFromOurArray = ourArray.pop(); 
+// removedFromOurArray now equals 3, and ourArray now equals [1,2]
+
+// Setup
+var myArray = [["John", 23], ["cat", 2]];
+
+// Only change code below this line.
+var removedFromMyArray = myArray.pop(myArray.length-1);
+// Example
+var ourArray = ["Stimpson", "J", ["cat"]];
+var removedFromOurArray = ourArray.shift();
+// removedFromOurArray now equals "Stimpson" and ourArray now equals ["J", ["cat"]].
+
+// Setup
+var myArray = [["John", 23], ["dog", 3]];
+
+// Only change code below this line.
+var removedFromMyArray = myArray.shift();
+
