@@ -190,4 +190,62 @@ var myArray = [["John", 23], ["dog", 3]];
 
 // Only change code below this line.
 var removedFromMyArray = myArray.shift();
+// Example
+var ourArray = ["Stimpson", "J", "cat"];
+ourArray.shift(); // ourArray now equals ["J", "cat"]
+ourArray.unshift("Happy"); 
+// ourArray now equals ["Happy", "J", "cat"]
 
+// Setup
+var myArray = [["John", 23], ["dog", 3]];
+myArray.shift();
+
+// Only change code below this line.
+myArray.unshift(["Paul",35]);
+// Example
+function ourReusableFunction() {
+    console.log("Heyya, World");
+  }
+  
+  ourReusableFunction();
+  
+  // Only change code below this line
+  function reusableFunction(){
+      console.log("Hi World");
+  }
+  reusableFunction();
+
+// Example
+function ourFunctionWithArgs(a, b) {
+    console.log(a - b);
+  }
+  ourFunctionWithArgs(10, 5); // Outputs 5
+  
+  // Only change code below this line.
+  
+  function functionWithArgs(param1,param2)
+  {
+  console.log(param1+param2);
+  
+  }
+  functionWithArgs(2,4);
+
+  // Declare your variable here
+var myGlobal=10;
+
+function fun1() {
+  // Assign 5 to oopsGlobal Here
+  oopsGlobal=5;
+}
+
+// Only change code above this line
+function fun2() {
+  var output = "";
+  if (typeof myGlobal != "undefined") {
+    output += "myGlobal: " + myGlobal;
+  }
+  if (typeof oopsGlobal != "undefined") {
+    output += " oopsGlobal: " + oopsGlobal;
+  }
+  console.log(output);
+}
