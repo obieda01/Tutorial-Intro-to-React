@@ -53,14 +53,14 @@ a = a + 1;
 b = b + 5;
 c = c + " String!";
 // Declarations
-var StUdLyCapVaR;
+var STUDLYCAPVAR;
 var properCamelCase;
 var TitleCaseOver;
 
 // Assignments
 STUDLYCAPVAR = 10;
-PRoperCAmelCAse = "A String";
-tITLEcASEoVER = 9000;
+properCamelCase = "A String";
+TitleCaseOver = 9000;
 var a = 3;
 var b = 17;
 var c = 12;
@@ -233,22 +233,6 @@ function ourFunctionWithArgs(a, b) {
   // Declare your variable here
 var myGlobal=10;
 
-function fun1() {
-  // Assign 5 to oopsGlobal Here
-  oopsGlobal=5;
-}
-
-// Only change code above this line
-function fun2() {
-  var output = "";
-  if (typeof myGlobal != "undefined") {
-    output += "myGlobal: " + myGlobal;
-  }
-  if (typeof oopsGlobal != "undefined") {
-    output += " oopsGlobal: " + oopsGlobal;
-  }
-  console.log(output);
-}
   function myLocalScope() {
     'use strict'; // you shouldn't need to edit this line
     var myVar;  
@@ -608,3 +592,187 @@ function golfScore(par, strokes) {
 
 // Change these values to test
 golfScore(5, 4);
+
+function caseInSwitch(val) {
+    var answer = "";
+    // Only change code below this line
+    switch(val){
+      case 1:
+        answer= "alpha";
+        break;
+      case 2:
+        answer="beta";
+        break;
+      case 3:
+        answer = "gamma";
+        break;
+      case 4:
+        answer = "delta"; 
+    }
+    // Only change code above this line  
+    return answer;  
+  }
+  
+  // Change this value to test
+  caseInSwitch(1);
+  function switchOfStuff(val) {
+    var answer = "";
+    // Only change code below this line
+    switch(val){
+      case "a":
+        answer = "apple";
+        break;
+      case "b":
+        answer ="bird";
+        break;
+      case "c":
+        answer ="cat";
+        break;
+      default :
+        answer="stuff";
+        break;
+  
+    }
+    
+    
+    // Only change code above this line  
+    return answer;  
+  }
+  
+  // Change this value to test
+  switchOfStuff(1);
+  function sequentialSizes(val) {
+    var answer = "";
+    // Only change code below this line
+    switch (val){
+      case 1:
+      case 2:
+      case 3:
+        answer = "Low";
+        break;
+      case 4:
+      case 5:
+      case 6:
+        answer = "Mid";
+        break;
+      case 7:
+      case 8:
+      case 9:
+        answer ="High";
+        break;
+    } 
+    
+    
+    // Only change code above this line  
+    return answer;  
+  }
+  
+  // Change this value to test
+  sequentialSizes(1);
+  function chainToSwitch(val) {
+    var answer = "";
+    // Only change code below this line
+    switch (val){
+      case "bob":
+        answer = "Marley";
+        break;
+      case (42):
+        answer = "The Answer";
+        break;
+      case 1 :
+        answer = "There is no #1";
+        break;
+      case 99:
+        answer = "Missed me by this much!";
+        break;
+      case 7:
+        answer ="Ate Nine";
+        break;
+    }
+  
+    
+    // Only change code above this line  
+    return answer;  
+  }
+  
+  // Change this value to test
+  chainToSwitch(7);
+    
+  var emp = {
+      name : "Ahmad d",
+      num : 1234
+  };
+
+  console.log(emp.name);
+
+  var myArray =[1,3,4];
+  console.log(myArray[1]);
+myArray.push(5,6,7,8,8);
+  for(var  i=0 ; i< myArray.length; i++){
+      console.log(myArray[i]);
+  }
+
+  function func(x){
+    console.log(typeof x, arguments.length);
+ }
+
+ func();                //==> "undefined", 0
+ func(1);               //==> "number", 1
+ func("1", "2", "3");   //==> "string", 3
+
+ function closures(){
+    var counter =0;
+    return {
+        increment : function(){
+            return counter++;
+        },
+        print : function(){
+            console.log(counter);
+        }
+    }
+
+ }
+ var c = closures();
+ c.increment();
+ c.print();
+
+
+ function sclosures(){
+    var counter =5;
+    return {
+        increment : function (){
+            console.log(counter++);
+        }
+    }
+
+ }
+ var c = sclosures();
+ c.increment();
+ c.increment();
+ c.increment();
+ c = sclosures();
+ c.increment();
+ c.increment();
+ c.increment();
+
+ var ff = "ahmad";
+ console.log(ff.indexOf('a'));
+ console.log(ff.substr(1,2));
+ console.log(typeof(1));
+ console.log(typeof(null));
+ var myVar= "Hi!"
+console.log(myVar.valueOf())
+
+function isLess(a, b) {
+    // Fix this code
+    if (a < b) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+  
+  // Change these values to test
+  isLess(10, 15);
+
+
