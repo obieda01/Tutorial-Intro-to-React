@@ -53,14 +53,14 @@ a = a + 1;
 b = b + 5;
 c = c + " String!";
 // Declarations
-var StUdLyCapVaR;
+var STUDLYCAPVAR;
 var properCamelCase;
 var TitleCaseOver;
 
 // Assignments
 STUDLYCAPVAR = 10;
-PRoperCAmelCAse = "A String";
-tITLEcASEoVER = 9000;
+properCamelCase = "A String";
+TitleCaseOver = 9000;
 var a = 3;
 var b = 17;
 var c = 12;
@@ -233,22 +233,6 @@ function ourFunctionWithArgs(a, b) {
   // Declare your variable here
 var myGlobal=10;
 
-function fun1() {
-  // Assign 5 to oopsGlobal Here
-  oopsGlobal=5;
-}
-
-// Only change code above this line
-function fun2() {
-  var output = "";
-  if (typeof myGlobal != "undefined") {
-    output += "myGlobal: " + myGlobal;
-  }
-  if (typeof oopsGlobal != "undefined") {
-    output += " oopsGlobal: " + oopsGlobal;
-  }
-  console.log(output);
-}
   function myLocalScope() {
     'use strict'; // you shouldn't need to edit this line
     var myVar;  
@@ -714,3 +698,67 @@ function caseInSwitch(val) {
   // Change this value to test
   chainToSwitch(7);
     
+  var emp = {
+      name : "Ahmad d",
+      num : 1234
+  };
+
+  console.log(emp.name);
+
+  var myArray =[1,3,4];
+  console.log(myArray[1]);
+myArray.push(5,6,7,8,8);
+  for(var  i=0 ; i< myArray.length; i++){
+      console.log(myArray[i]);
+  }
+
+  function func(x){
+    console.log(typeof x, arguments.length);
+ }
+
+ func();                //==> "undefined", 0
+ func(1);               //==> "number", 1
+ func("1", "2", "3");   //==> "string", 3
+
+ function closures(){
+    var counter =0;
+    return {
+        increment : function(){
+            return counter++;
+        },
+        print : function(){
+            console.log(counter);
+        }
+    }
+
+ }
+ var c = closures();
+ c.increment();
+ c.print();
+
+
+ function sclosures(){
+    var counter =5;
+    return {
+        increment : function (){
+            console.log(counter++);
+        }
+    }
+
+ }
+ var c = sclosures();
+ c.increment();
+ c.increment();
+ c.increment();
+ c = sclosures();
+ c.increment();
+ c.increment();
+ c.increment();
+
+ var ff = "ahmad";
+ console.log(ff.indexOf('a'));
+ console.log(ff.substr(1,2));
+ console.log(typeof(1));
+ console.log(typeof(null));
+
+
