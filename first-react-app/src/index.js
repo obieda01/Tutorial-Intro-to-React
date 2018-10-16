@@ -760,5 +760,7 @@ myArray.push(5,6,7,8,8);
  console.log(ff.substr(1,2));
  console.log(typeof(1));
  console.log(typeof(null));
+ var myVar= "Hi!"
+console.log(myVar.valueOf())
 
 
